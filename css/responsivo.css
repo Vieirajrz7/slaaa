@@ -30,6 +30,7 @@
     }
     .card {
         flex: 100%;
+        width: 33%;
     }
 }
 
@@ -38,6 +39,9 @@
         flex: 100%;
         margin: 5%;
         text-align: center;
+    }
+    .card {
+        width: 30%;
     }
     .headline {
         flex: 100%;
@@ -52,9 +56,14 @@
 
 @media screen and (max-width:470px){
     .headeline {
-        font-size: 10px;
         text-align: center;
         margin: 0 5% 0 5%;
+    }
+    .headeline h2 {
+        font-size: 8px;
+    }
+    #confeiteira {
+        font-size: 55px;
     }
     .card {
         flex: 100%;
@@ -62,5 +71,25 @@
     }
     .headeline p{
         font-size: 12px;
+    }
+    section h2 {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .card {
+        flex: 100%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:320px) {
+    #confeiteira {
+        font-size: 40px;
+    }
+
+    section h2 {
+        font-size: 25px;
     }
 }

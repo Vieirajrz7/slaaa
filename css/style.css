@@ -92,6 +92,10 @@ body {
     padding-top: 100px;
 }
 
+#confeiteira {
+    font-size: 81px;
+}
+
 .headline {
     margin-left: 10%;
     flex: 40%;
