@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Maze Scary</title>
+</head>
+<body>
+    <div id="tudo">
+        <a id="reset" href="index.html">Recomeçar</a>
+        
+        <img id="imgSusto" src="img/susto-freddy.jpg">
+        <audio id="susto">
+            <source src="audio/grito-morreu.mp3" type="audio/mpeg">
+        </audio>
+
+    <div onmouseover="ganhou()" id="ganhou">
+        <p style="font-size: 32px; font-weight: bold; display: inline-block;"></p>
+    </div>
+    
+    <div onmouseover="gameOverEsq(), susto()" id="ladoEsquerdo"></div>
+
+    <div onmouseover="gameOverDir()" id="ladoDireito"></div>   
+
+</div>
+
+
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
