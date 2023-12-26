@@ -4,68 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsivo.css">
-    <title>Document</title>
+    <title>Maze Scary</title>
 </head>
 <body>
+    <div id="tudo">
+        <a id="reset" href="index.html">Recomeçar</a>
+        
+        <img id="imgSusto" src="img/susto-freddy.jpg">
+        <audio id="susto">
+            <source src="audio/grito-morreu.mp3" type="audio/mpeg">
+        </audio>
+
+    <div onmouseover="ganhou()" id="ganhou">
+        <p style="font-size: 32px; font-weight: bold; display: inline-block;"></p>
+    </div>
     
-    <nav class="navbar">
-        <div class="logo">
-            <h1>Sandra Bolos</h1>
-        </div>
-        <div class="menu">
-            <a href="#">Home</a>
-            <a href="#">Sobre Nós</a>
-            <a href="#">Serviços</a>
-            <a id="btn-1" target="_blank" href="https://w.app/72kEpH">Fale Conosco</a>
-        </div>
-    </nav>
-    <header class="header">
+    <div onmouseover="gameOverEsq(), susto()" id="ladoEsquerdo"></div>
 
-        <div class="headline">
-            <h2 style="letter-spacing: 12px; margin-left: 13px;">Você achou a melhor</h2>
-            <h2 id="confeiteira" style="letter-spacing: 5px;">Confeiteira</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus provident reprehenderit rerum id sit laborum praesentium dolores tempora, sunt doloribus officia explicabo non nesciunt, dolor ad harum animi necessitatibus exercitationem.</p>
-            <a href="https://w.app/72kEpH" target="_blank" class="contact-btn">Contrate Agora</a>
-        </div>
-        <div class="img-headline">
-            <img style="max-width: 100%;" src="img/boleira.png" alt="foto boleira">
-        </div>
-    </header>
+    <div onmouseover="gameOverDir()" id="ladoDireito"></div>   
 
-    <section>
-        <h2>Quais os sabores mais vendidos?</h2>
-        <div class="sabores">
-            <div class="card">
-                <img src="img/bolo-de-aniversario.png" alt="">
-                <h3>Bolos de Aniversários</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed officia dolores debitis, incidunt vel quasi! Corporis, omnis eligendi odit at natus fugit vitae repellendus, delectus sequi numquam pariatur corrupti aliquam?</p>
-            </div>
-            <div class="card">
-                <img src="img/bolo-de-casamento.png" alt="">
-                <h3>Bolos de Casamentos</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut repellat ipsa numquam esse dicta veniam neque asperiores facere saepe, sed hic porro! Consequuntur, ab consectetur cumque minima non ut excepturi.</p>
-            </div>
-            <div class="card">
-                <img src="img/bolo-de-fuba.png" alt="">
-                <h3>Bolos Tradicionais</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur beatae tempora explicabo laborum doloremque, exercitationem optio esse, perferendis nostrum quaerat mollitia illo porro, ipsam consequatur odit fugit minima aliquid.</p>
-            </div>
+</div>
 
-        </div>
-    </section>
 
-        <a href="https://w.app/72kEpH">
-        <img class="zap" style="width: 100px;" target="_blank" src="img/img-zap.png" alt="">
-        </a>
 
-    <footer>
-        <div class="logo-rodape">
-        <h1 class="sandra">Sandra Bolos</h1>
-        <p style="color: white;">Um site Feito com HTML e CSS</p>
-        </div>
-        <b style="color: white;">© Todos os direitos reservados</b>
-    </footer>
 
+    <script src="js/script.js"></script>
 </body>
 </html>
